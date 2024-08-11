@@ -11,6 +11,7 @@
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="Connect" />
 
     <Button
@@ -18,29 +19,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
         android:text="Disconnect" />
+
     <TextView
         android:id="@+id/tvMassage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ds"
+        android:layout_below="@id/btn1"
+        android:layout_margin="10dp"
+        android:textColor="#C80303"
         android:textSize="15sp"
-        android:layout_below="@id/btn1"/>
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/edtMassage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:hint="Write Something Here..." />
 
     <Button
         android:id="@+id/btnSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:text="Send"
         android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/edt"/>
-
-    <EditText
-        android:id="@+id/edtMassage"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:hint="button 1" />
+        android:layout_toEndOf="@id/edtMassage"
+        android:text="Send" />
 
 </RelativeLayout>
